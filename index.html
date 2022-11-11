@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>华水校庆官网</title>
+
+    <!--    引入网页图标-->
+    <link rel="shortcut icon" href="./ncwu.ico"  type="image/x-icon"/>
+    <!--    引入基础css-->
+    <link rel="stylesheet" href="./CSS/base/base.css">
+    <!--    引入公共的css文件-->
+    <link rel="stylesheet" href="./CSS/base/common.css">
+    <!--    引入轮播图js-->
+    <script type="text/javascript"  src="./js/index.js"></script>
+    <!--    引入主页css-->
+    <link rel="stylesheet" href="./CSS/index/lunbo.css">
+    <!--    通过symbol引入文字图标-->
+    <script src="./js/iconfont.js"></script>
+    <!--    引入时间轴-->
+    <link rel="stylesheet" href="./CSS/index/time-line/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./CSS/index/time-line/htmleaf-demo.css">
+    <link rel="stylesheet" href="./CSS/index/time-line/timeline.css">
+    <!--    引入图阵-->
+    <link rel="stylesheet" href="./CSS/index/card-line.css">
+    <!--引入3d轮播图-->
+    <link href="./CSS/index/ppic.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+
+<div class="content">
+
+<!--顶部图标栏start-->
+    <div class="shortcut">
+        <div class="w">
+
+            <div class="fl">
+                <img src="./upload/index-tb-3.png" alt="图像丢啦">
+            </div>
+            <div class="fr">
+                <ul>
+
+                    <li><a href="#" style="color: #e33333">首页</a></li>
+
+                    <li><a href="pic.html">校庆通知</a></li>
+
+                </ul>
+            </div>
+
+            </div>
+        </div>
+<!--顶部图标栏end-->
+
+
+
+<!--顶部轮播图start-->
+<div class="box">
+        <div class="lunboimg">
+            <a href="#">
+                <img id="lunbo" src="./upload/lunbo/index-lb-2.jpg"/>
+            </a>
+        </div>
+        <div id="selector">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="left">&lt;</div>
+        <div id="right">&gt;</div>
+    </div>
+<script>
+        let play = lunboImg();
+        let r = new play();
+        r.autoPlay();
+        r.ctrlPlay();
+        r.pointCtrlPlay();
+        r.eventListener();
+    </script>
+<!--顶部轮播图end-->
+
+<!--时间轴start-->
+<div class="htmleaf-container">
+
+        <div class="cent" style="background: skyblue">
+    <span>
+    <img src="./upload/index-tb-1.png" alt="图片丢啊">
+    校庆通知
+    </span>
+        </div>
+
+        <div class="demo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="main-timeline">
+
+                            <div class="timeline" data-heading="10-13">
+                                <div class="timeline-content">
+                                    <p class="description">
+                                        关于做好校庆期间氛围营造工作的通知
+                                    </p>
+                                    <a href="https://70.ncwu.edu.cn/contents/26/421.html" class="read-more">了解更多</a>
+                                </div>
+                                <span class="year">
+		                                <span>2021</span>
+		                            </span>
+                            </div>
+
+                            <div class="timeline" data-heading="9-14">
+                                <div class="timeline-content">
+                                    <p class="description">
+                                        关于召开校庆工作汇报会的通知
+                                    </p>
+                                    <a href="https://70.ncwu.edu.cn/contents/26/99.html" class="read-more">了解更多</a>
+                                </div>
+                                <span class="year">
+		                                <span>2021</span>
+		                            </span>
+                            </div>
+
+                            <div class="timeline" data-heading="6-23">
+                                <div class="timeline-content">
+                                    <p class="description">
+                                        关于召开校友会秘书长工作会议的通知
+                                    </p>
+                                    <a href="https://70.ncwu.edu.cn/contents/26/75.html" class="read-more">了解更多</a>
+                                </div>
+                                <span class="year">
+		                                <span>2021</span>
+		                            </span>
+                            </div>
+
+                            <div class="timeline" data-heading="10-28">
+                                <div class="timeline-content">
+                                    <p class="description">
+                                        关于70周年校庆专项捐赠项目征集的通知
+                                    </p>
+                                    <a href="https://70.ncwu.edu.cn/contents/26/4.html" class="read-more">了解更多</a>
+                                </div>
+                                <span class="year">
+		                                <span>2020</span>
+		                            </span>
+                            </div>
+
+                            <div class="timeline bottom" data-heading="10-11">
+		                            <span class="year">
+		                                <span>2021</span>
+		                            </span>
+                                <div class="timeline-content">
+                                    <p class="description">
+                                        华北水利水电大学建校70周年校庆主要活动安排
+                                    </p>
+                                    <a href="https://70.ncwu.edu.cn/contents/26/360.html" class="read-more">了解更多</a>
+                                </div>
+                            </div>
+
+                            <div class="timeline bottom" data-heading="6-25">
+		                            <span class="year">
+		                                <span>2021</span>
+		                            </span>
+                                <div class="timeline-content">
+                                    <p class="description">
+                                        关于做好学校形象宣传片拍摄工作的通知
+                                    </p>
+                                    <a href="https://70.ncwu.edu.cn/contents/26/76.html" class="read-more">了解更多</a>
+                                </div>
+                            </div>
+
+                            <div class="timeline bottom" data-heading="4-15">
+		                            <span class="year">
+		                                <span>2021</span>
+		                            </span>
+                                <div class="timeline-content">
+                                    <p class="description">
+                                        关于召开校友会秘书长工作会议的通知
+                                    </p>
+                                    <a href="https://70.ncwu.edu.cn/contents/26/5.html" class="read-more">了解更多</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--时间轴end-->
+
+
+
+
+
+<!--footer start-->
+<div class="foot">
+            <div class="w">
+                <img src="./upload/index-tb-2.png" alt="图像丢啦">
+                <br>
+                <h2> 版权所有：华北水利水电大学 | 豫ICP备05002494</h2>
+                <br>
+                <h2>花园校区地址：河南省郑州市北环路36号 邮编：450045</h2>
+                <br>
+                <h2> 龙子湖校区地址：河南省郑州市金水东路136号 邮编：450046</h2>
+            </div>
+</div>
+<!--footer end-->
+
+</div>
+
+</body>
+</html>

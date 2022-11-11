@@ -1,0 +1,91 @@
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+/*版心*/
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+/*文字图标*/
+.icon {
+    width: 3em;
+    height: 2em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    color: #ffffff;
+}
+.style-white{
+    color: white;
+}
+
+.spacer{
+    width: 1px;
+    height: 5px;
+    background: rgb(0,95,175);
+    margin: 0 70px;
+}
+
+/*顶部快捷导航*/
+.shortcut{
+    height: 5em;
+    background: rgb(0,95,175);
+    line-height: 5em;
+    bottom: 0;
+}
+
+.shortcut li{
+display: inline-block;
+    font-size: 20px;
+
+}
+
+.head{
+    height: 5em;
+    background: rgb(0,95,175);
+    line-height: 4em;
+
+}
+.head li{
+    margin-bottom: 0;
+    float: right;
+}
+.head a{
+    color: white;
+    font-size: 20px;
+}
+.head a:hover{
+    color: #e33333;
+}
+
+
+.foot{
+    /*position:relative;*/
+    bottom:0;
+    width:100%;
+    height: auto;
+    background: rgb(0,95,175);
+    text-align: center;
+}
+.foot h2{
+    color:white;
+}
+.cent{
+    text-align: center;
+    font-size: 45px;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+

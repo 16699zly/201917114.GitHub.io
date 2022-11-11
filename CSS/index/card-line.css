@@ -1,0 +1,114 @@
+body {
+    background-color: rgb(0,95,175);
+}
+/* 大盒子 */
+.item-grid {
+    max-width: 1000px;
+    margin: 5%  auto;
+    position: relative;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* 小盒子 */
+.item {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.item::after {
+    content: " ";
+    display: block;
+    background-color: inherit;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 没悬浮的时候，隐藏在图片下方 */
+    transform: translateY(100%);
+    transition: transform 0.5s ;
+}
+
+/* 悬浮后覆盖在图片上面*/
+.item:hover:after {
+    transform:   translateY(0%) ;
+
+}
+
+
+.item:hover .item-image {
+    transform: scale(1 1);
+}
+
+.item:hover .item-text {
+    opacity: 1;
+    color: black;
+    transform: translateY(0%);
+}
+
+.item-image {
+
+    height: 100px;
+    width: 100px;
+    backface-visibility: hidden;
+    transition: transform 1.2s ;
+}
+
+.item-image::before {
+    content: "";
+    display: block;
+    padding-top: 75%;
+    overflow: hidden;
+
+
+}
+
+.item-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.item-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.5;
+    cursor: pointer;
+    text-align: center;
+    z-index: 1;
+    color: rgba(256,256,256,0.2);
+    transition: transform 1s ;
+    /* 文字初始的位置 */
+    transform: translateY(40%);
+}
+
+.item-text-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.item-text-title {
+    font-size: 36px;
+    padding: 0 15px;
+    margin: 5px 0 0 0;
+}
+
+.item-text-dek {
+    font-size: 16px;
+    opacity: 0.7;
+    margin: 0;
+}

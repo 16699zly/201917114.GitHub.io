@@ -1,0 +1,27 @@
+#login-box {
+    border: 1px solid rgb(178,34,34);
+
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    /*margin: 0 auto;*/
+    /*margin-top: 15%;*/
+    background: rgb(178,50,50);
+    padding: 20px 50px;
+
+}
+
+#login-box h1 {
+    color: rgb(0,75,120);
+}
+
+#login-box button {
+    border: 0; /* 取消按钮的边界 */
+    width: 150px; /* 设置合适的按钮的长和宽 */
+    height: 30px;
+    margin-top: 18px; /* 设置合适的上部外框的宽度，增加与上面的password框的距离 */
+    font-size: 18px; /* 修改按钮文字的大小 */
+    color: white; /* 修改按钮上文字的颜色 */
+    border-radius: 25px; /* 将按钮的左右边框设置为圆弧 */
+    background: white;
+}
